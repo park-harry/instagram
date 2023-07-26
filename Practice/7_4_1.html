@@ -1,0 +1,12 @@
+<!-- 동일한 요소를 대상으로 하는 CSS 코드가 여러번 등장-->
+<style>
+    p{border: solid; border-color: blue;}
+    #myID{color: red; border-color: blueviolet;}
+    .myClass{color: green; border-color: yellow;}
+</style>
+<p class="myClass" id="myID">
+    어떤 결과가 나올까요? 
+</p>
+
+<!-- 가장 마지막에 저장된거랑 결과값이 다르다. 우선순위가 다르기 때문-->
+<!-- ID (#) > Class (.) > 태그 -->
