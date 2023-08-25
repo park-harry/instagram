@@ -1,0 +1,21 @@
+
+<style>
+    .myGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first{background-color: yellow;}
+    #second{background-color: green;}
+</style>
+<div class="myGrid">
+    <div id="first">1번 영역</div>
+    <div id="second">2번 영역</div>
+</div>
+
+<!-- <div> 태그의 기본적인 display 속성은 blcok이므로 줄 바꿈이 지정됐다.-->
+<!-- #first와 #second는 myGrid 의 자식 태그다. -->
+<!-- grid 적용은 부모에 해당하는 .myGrid 클래스를 대상으로 한다.-->
+<!-- grid-template-columns 스타일 속성이 지정되면 브라우저는 그리드를 
+    여러 개의 열로 쪼갤 준비를 한다.-->
+    <!-- fr은 fraction (분수)의 약자다. '1fr 1fr' 은 
+        '너비를 1:1 비율로 나눠 가지겠다' 라는 뜻.-->
